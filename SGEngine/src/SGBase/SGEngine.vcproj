@@ -171,7 +171,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\Demo.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\DxBase.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\SGEngine.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\SGESingleton.cpp"
 				>
 			</File>
 			<File
@@ -201,11 +213,27 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\Demo.h"
+				>
+			</File>
+			<File
+				RelativePath=".\DxBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\DxHeader.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Resource.h"
 				>
 			</File>
 			<File
 				RelativePath=".\SGEngine.h"
+				>
+			</File>
+			<File
+				RelativePath=".\SGESingleton.h"
 				>
 			</File>
 			<File
