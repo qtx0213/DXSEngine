@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "SGEngine.h"
+#include "Demo.h"
 
 #define MAX_LOADSTRING 100
 
@@ -51,6 +52,8 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
+
+		CDemo::getSingleton().render();
 	}
 
 	return (int) msg.wParam;
@@ -93,9 +96,10 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
       return FALSE;
    }
 
+   CDemo::Create();
+   CDemo::getSingleton().initDirectx9(hWnd);
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
-
    return TRUE;
 }
 
